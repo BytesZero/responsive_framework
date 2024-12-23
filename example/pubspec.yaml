@@ -1,0 +1,39 @@
+name: minimal
+description: A minimalistic Flutter website template for blogs and portfolios.
+version: 1.4.0
+publish_to: none
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  responsive_framework:
+    path: ../
+  # Uncomment to build standalone project.
+  #  responsive_framework: ^1.0.0
+  navigation_utils:
+    path: navigation_utils
+  google_fonts: ^4.0.3
+  animations: ^2.0.7
+  loading_gifs: ^0.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.12.0
+  flutter_lints: ^2.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/Minimal-Logo.png"
+  image_path_ios: "assets/Minimal-Logo-iOS.png"
+  adaptive_icon_background: "#FFFFFFFF"
+  adaptive_icon_foreground: "assets/Minimal-Logo-Adaptive.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
